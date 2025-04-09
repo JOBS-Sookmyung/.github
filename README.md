@@ -27,7 +27,7 @@
 4. AI 피드백의 부재
 
 </br>
-## 🍎 기술
+<h3> 🍎 기술 </h3>
 <h4> Frontend </h4>
 <div>
   <img src="https://img.shields.io/badge/react-20232a.svg?style=for-the-badge&logo=react&logoColor=61DAFB" />&nbsp
