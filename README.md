@@ -1,4 +1,4 @@
-![13](https://github.com/user-attachments/assets/8b3e032e-8686-41bb-bf47-4b392e01aa37)<!--타이틀 부분-->
+<!--타이틀 부분-->
 <img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&height=300&section=header&text=Jobis&fontSize=80" />
 
 # 👀 Jobis
