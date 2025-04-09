@@ -10,8 +10,12 @@
 - 실시간 피드백 및 개선 포인트 제공
 - 개인 이력서 맞춤 영상 추천 서비스 제공
 
+</br>
+
 ## 🍎 팀원
 ![9](https://github.com/user-attachments/assets/ada8b4f0-507d-410d-9b0f-41d3db558373)
+
+</br>
 
 ## 🍎 배경
 ![4](https://github.com/user-attachments/assets/f3b25bd3-3504-46da-9ffd-f5a27ad24dae)
@@ -22,6 +26,7 @@
 3. 개인화 부족
 4. AI 피드백의 부재
 
+</br>
 ## 🍎 기술
 ### Frontend
   <img src="https://img.shields.io/badge/react-20232a.svg?style=for-the-badge&logo=react&logoColor=61DAFB" />&nbsp
@@ -40,17 +45,23 @@
   <img src="https://img.shields.io/badge/yt_dlp-009688?style=flat-square&logo=openai&logoColor=white"/>
   <img src="https://img.shields.io/badge/selenium-1572B6?style=flat-square&logo=openai&logoColor=white"/>
 
+</br>
+
 ## 🍎 UI/UX
 ![38](https://github.com/user-attachments/assets/bdd8b5f2-f375-417b-83f5-4cf1e4e7a61f)
 ![39](https://github.com/user-attachments/assets/40c2564b-0a0b-4647-9934-371f94dc76c2)
 ![40](https://github.com/user-attachments/assets/786c8f87-9fb7-4000-9bc5-20800cdea3de)
 ![42](https://github.com/user-attachments/assets/15cc7623-9451-4042-ab81-a6f25777c8ad)
 
+</br>
+
 ## 🍎 기술 설명
 ### 추천시스템
 ![13](https://github.com/user-attachments/assets/aa49d0d6-9c75-460f-a3e8-55ef24018f2d)
 ![16](https://github.com/user-attachments/assets/e5a22f07-32a9-4371-8833-bc255804d2b4)
 ![17](https://github.com/user-attachments/assets/91822ac5-27b5-48e5-b306-5cf38e3824cc)
+
+</br>
 
 ### 챗봇
 ![19](https://github.com/user-attachments/assets/c0897116-6cdf-4ad9-b5e1-5eb18e7ccf13)
