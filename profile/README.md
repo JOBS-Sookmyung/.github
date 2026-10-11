@@ -1,46 +1,49 @@
 
-<!--타이틀 부분-->
+<!-- Header -->
 <img src="https://capsule-render.vercel.app/api?type=blur&color=gradient&height=300&section=header&text=Jobis&fontSize=80" />
 
 # 👀 Jobis
-AI 기반 맞춤형 **면접 준비 플랫폼**  
-이력서와 공고 URL을 기반으로 면접 질문을 생성하고, 실시간 피드백과 관련 학습 영상을 제공하여 사용자가 효과적으로 면접을 준비할 수 있도록 돕습니다.
+An AI-powered **personalized interview preparation platform**.
+
+Jobis generates tailored interview questions based on users' resumes and job posting URLs. It helps users prepare effectively for job interviews by providing real-time feedback and recommending relevant learning videos.
 
 ---
 
-## 🍎 소개
+## 🍎 Introduction
 ![1](https://github.com/user-attachments/assets/67379bb3-8184-472c-9a80-1787732c4445)
 
-Jobis는 단순한 채용/이력서 관리 서비스가 아닌 **개인화된 AI 면접 준비 서비스**를 목표로 합니다.  
-사용자의 이력서와 지원 직무 정보를 바탕으로 맞춤형 질문과 피드백을 제공하며, 부족한 부분은 영상 자료를 통해 보완할 수 있습니다.
+Jobis aims to go beyond traditional recruitment and resume management services by offering a **personalized AI-powered interview preparation experience**.
 
-**주요 기능**
-- 📝 **맞춤형 면접 질문 생성** (LLM + RAG 기반)
-- 💬 **실시간 피드백 및 개선 포인트 제시**
-- 🎥 **이력서 맞춤 영상 추천**
-- 📊 **피드백 히스토리 관리**
+Based on each user's resume and target job position, Jobis generates customized interview questions and provides actionable feedback. It also recommends relevant video resources to help users improve areas where they need additional preparation.
+
+**Key Features**
+- 📝 **Personalized Interview Question Generation** (LLM + RAG)
+- 💬 **Real-time Feedback and Improvement Suggestions**
+- 🎥 **Resume-based Video Recommendations**
+- 📊 **Interview Feedback History Management**
 
 ---
 
-## 🍎 팀원
+## 🍎 Team
 ![9](https://github.com/user-attachments/assets/ada8b4f0-507d-410d-9b0f-41d3db558373)
 
 ---
 
-## 🍎 배경
+## 🍎 Background
 ![4](https://github.com/user-attachments/assets/f3b25bd3-3504-46da-9ffd-f5a27ad24dae)
 
-### 기존 서비스의 문제
-1. 면접 보조가 아닌 **채용 중심** 서비스
-2. **정형화된 질문**만 제공 → 다양성/적합성 부족
-3. **개인화 수준 낮음**
-4. **실시간 피드백 기능 부재**
+### Limitations of Existing Services
+1. Primarily focused on **recruitment rather than interview preparation**
+2. Reliance on **standardized interview questions**, resulting in limited diversity and relevance
+3. **Limited personalization** based on individual qualifications and job requirements
+4. **Lack of real-time feedback** to support continuous improvement
 
-➡️ Jobis는 이를 개선하여 **개인화 + 피드백 중심**의 차별화된 면접 준비 솔루션을 제공합니다.
+➡️ Jobis addresses these limitations by providing a differentiated interview preparation solution focused on **personalization and actionable feedback**.
 
 ---
 
-## 🍎 기술 스택
+## 🍎 Tech Stack
+
 <h4>Frontend</h4>
 <div>
   <img src="https://img.shields.io/badge/react-20232a.svg?style=for-the-badge&logo=react&logoColor=61DAFB" />&nbsp
@@ -68,15 +71,16 @@ Jobis는 단순한 채용/이력서 관리 서비스가 아닌 **개인화된 AI
 
 ---
 
-## 🍎 아키텍처
+## 🍎 System Architecture
+
 ```mermaid
 flowchart TD
-    A[사용자 이력서 + 공고 URL] -->|입력| B[LLM + RAG 처리]
-    B --> C[맞춤형 면접 질문 생성]
-    C --> D[실시간 피드백 제공]
-    D --> E[관련 영상 추천 시스템]
-    E --> F[UI/UX 프론트엔드]
-````
+    A[User Resume + Job Posting URL] -->|Input| B[LLM + RAG Processing]
+    B --> C[Personalized Interview Question Generation]
+    C --> D[Real-time Feedback]
+    D --> E[Relevant Video Recommendation System]
+    E --> F[UI/UX Frontend]
+```
 
 ---
 
@@ -89,34 +93,34 @@ flowchart TD
 
 ---
 
-## 🍎 주요 기능 설명
+## 🍎 Core Features
 
-### 추천 시스템
+### Video Recommendation System
 
-* 지원 직무와 이력서 기반으로 영상 자료를 자동 추천
-* Faiss 기반 벡터 검색으로 개인화 강화
-* YouTube 크롤링(`yt_dlp` + `selenium`)을 통해 최신 자료 확보
+* Automatically recommends relevant learning videos based on the user's resume and target job position
+* Enhances personalization through **FAISS-based vector similarity search**
+* Retrieves up-to-date learning resources through YouTube crawling using `yt_dlp` and `selenium`
 
-### 챗봇
+### AI Interview Chatbot
 
-* 면접관 역할 수행 (질문 생성)
-* 답변에 대한 **실시간 피드백** 제공
-* 답변 기록 저장 및 개선 히스토리 관리 가능
+* Simulates an interviewer by generating personalized interview questions
+* Provides **real-time feedback** on user responses and suggests areas for improvement
+* Stores interview responses and maintains feedback history to help users track their progress over time
 
 ---
 
-## 🍎 설치 및 실행 방법
+## 🍎 Installation & Setup
 
 ```bash
 # Clone repository
 git clone https://github.com/your-repo/jobis.git
 cd jobis
 
-# Backend 실행
+# Run Backend
 cd backend
 docker-compose up --build
 
-# Frontend 실행
+# Run Frontend
 cd frontend
 npm install
 npm run dev
@@ -124,12 +128,10 @@ npm run dev
 
 ---
 
-## 🍎 향후 발전 방향
+## 🍎 Future Improvements
 
-* 음성 인식 기반 실시간 피드백 (Speech-to-Text + Sentiment Analysis)
-* 기업별/직무별 맞춤 데이터셋 확대
-* 사용자 데이터 기반 **개인화 강화**
-* 면접 모드(실제 화상 면접 시뮬레이션) 제공
-
-```
+* Voice-based real-time feedback using **Speech-to-Text and Sentiment Analysis**
+* Expansion of company-specific and job-specific interview datasets
+* Enhanced **personalization based on user data and interview history**
+* Interactive interview mode with realistic video interview simulations
 
